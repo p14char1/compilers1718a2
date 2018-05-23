@@ -1,18 +1,4 @@
 import plex
-"""
-EXPRESSIONS
-<Program> -> Stmt_List #
-Stmt_List -> Stmt Stmt_List | e
-Stmt -> id = Expr | print Expr
-Expr -> Term Term_Tail
-Term_Tail -> OP1 Term Term_Tail | e
-Term -> Factor Factor_Tail 
-Factor_Tail -> OP2 Factor Factor_Tail | e
-Factor -> (Expr) | id | tf | e
-OP1 -> and | or
-OP2 -> not
-
-"""
 
 class ParseError(Exception):
 	pass
